@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="672f97ad-4fef-4c20-aba2-488f6144227b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/container/container.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/container.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/EmtyPersonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/annotations/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/annotations/Inject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/person/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/person/PersonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/src/main/java/com/context/person/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/Context.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/EmtyPersonException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/annotations/Component.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/annotations/Inject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/person/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/person/PersonRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/container/target/classes/ru/itis/dis205/lab2_1/person/PersonService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2cGyhTgN9W70VfvZwn8w4agJn7v" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/aidar/IdeaProjects/oris/container&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="oris" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="oris" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="672f97ad-4fef-4c20-aba2-488f6144227b" name="Changes" comment="" />
+      <created>1707752328809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707752328809</updated>
+      <workItem from="1707752329833" duration="333000" />
+      <workItem from="1707752668435" duration="42000" />
+      <workItem from="1707752716829" duration="237000" />
+      <workItem from="1707752968977" duration="47000" />
+      <workItem from="1707753024040" duration="17000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
