@@ -28,36 +28,50 @@ public class Context {
      * @param className = ru.itis.dis205.lab2_1.person.PersonService
      * @return
      */
-    public Object getObjectByName(String className) {
+    private Object getObjectByName(String className) {
         return components.get(className);
     }
 
     public Set<Class<?>> scanComponent() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
-//        Package pkg = Package.getPackage(scanPacketPath);
         Reflections reflections = new Reflections(scanPacketPath, new SubTypesScanner(false));
-        Set<Class<?>> allClassNames = reflections.getSubTypesOf(Object.class);
+        Set<Class<?>> allClasses = reflections.getSubTypesOf(Object.class);
 
-        return allClassNames;
+        return allClasses;
     }
 
-    private void createObjectsAndPut(Set<Class<?>> allClassNames) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void createObjectsAndPut(Set<Class<?>> allClassNames) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         for (Class<?> clazz : allClassNames.stream().toList()) {
+
             Annotation annotation = clazz.getAnnotation(Component.class);
+
             if (annotation != null) {
+
                 Object instance = createObjectByClass(clazz);
                 components.put(clazz, instance);
+
             }
         }
     }
 
     public void findAndInitInjectedFields() {
         for(Class<?> clazz: components.keySet()) {
-            List<Field> fields = List.of(clazz.getFields());
-            for (Field field: fields) {
-                if (field.isAnnotationPresent(Inject.class)) {
 
+            List<Field> fields = List.of(clazz.getDeclaredFields());
+
+            fields.forEach((field) -> {
+                if (field.isAnnotationPresent(Inject.class)) {
+                    Class<?> injectClass = field.getType();
+
+                    if (components.containsKey(injectClass)) {
+                        try {
+                            field.setAccessible(true);
+                            field.set(components.get(clazz), components.get(injectClass));
+                        } catch (IllegalAccessException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
                 }
-            }
+            });
         }
     }
 
