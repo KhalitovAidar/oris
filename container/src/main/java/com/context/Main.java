@@ -23,8 +23,10 @@ public class Main {
         String docBase = new File(".").getAbsolutePath();
         Context tomcatContext = tomcat.addContext(contextPath, docBase);
 
-        String servletName = "dispatcherServlet"; // любое уникальное имя
-        tomcat.addServlet(contextPath, servletName, new DispatcherServlet());
+        ContextController applicationContext = new ContextController(new HashMap<>(), "com.context.person");
+
+        String servletName = "dispatcherServlet";
+        tomcat.addServlet(contextPath, servletName, new DispatcherServlet(applicationContext));
 
         tomcatContext.addServletMappingDecoded("/*", servletName);
 

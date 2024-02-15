@@ -15,8 +15,8 @@ import java.util.Set;
 
 public class Context {
 
-    private Map<Class<?>, Object> components;
-    private String scanPacketPath;
+    protected Map<Class<?>, Object> components;
+    protected String scanPacketPath;
 
     public Context(Map<Class<?>, Object> components, String scanPacketPath) {
         this.components = components;
@@ -75,7 +75,7 @@ public class Context {
         }
     }
 
-    private Object createObjectByClass(Class<?> clazz) throws InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchMethodException {
+    protected Object createObjectByClass(Class<?> clazz) throws InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchMethodException {
         Constructor<?> constructor = clazz.getConstructor();
         constructor.setAccessible(true);
         return constructor.newInstance();
