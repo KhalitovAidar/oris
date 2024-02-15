@@ -11,6 +11,6 @@ public class Application {
         Set<Class<?>> allClasses = context.scanComponent();
         context.createObjectsAndPut(allClasses);
         context.findAndInitInjectedFields();
-        System.out.println("lol");
+        System.out.println("finish");
     }
 }
