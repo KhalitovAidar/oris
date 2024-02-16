@@ -1,5 +1,6 @@
 package com.context;
 
+import com.context.appcontexts.ContextController;
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.connector.Connector;
 import org.apache.catalina.startup.Tomcat;
@@ -22,11 +23,13 @@ public class Main {
         String contextPath = "";
         String docBase = new File(".").getAbsolutePath();
         Context tomcatContext = tomcat.addContext(contextPath, docBase);
+        String contextsPacketPath = "com.context.person";
 
-        ContextController applicationContext = new ContextController(new HashMap<>(), "com.context.person");
+        ContextController applicationControllerContext = new ContextController(new HashMap<>(), contextsPacketPath);
+        com.context.appcontexts.Context applicationContext = new com.context.appcontexts.Context(new HashMap<>(), contextsPacketPath);
 
         String servletName = "dispatcherServlet";
-        tomcat.addServlet(contextPath, servletName, new DispatcherServlet(applicationContext));
+        tomcat.addServlet(contextPath, servletName, new DispatcherServlet(applicationControllerContext));
 
         tomcatContext.addServletMappingDecoded("/*", servletName);
 

@@ -1,4 +1,4 @@
-package com.context;
+package com.context.appcontexts;
 
 import com.context.annotations.Controller;
 import com.context.annotations.GetRequest;

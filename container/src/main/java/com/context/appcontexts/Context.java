@@ -1,4 +1,4 @@
-package com.context;
+package com.context.appcontexts;
 
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
